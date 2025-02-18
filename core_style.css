@@ -1,3 +1,86 @@
-.point{
-    border-radius: 45px;
+/* Core layout structure */
+#page-content {
+    padding: 2rem 3rem;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 70px); /* Full height minus navbar */
+}
+
+/* Dashboard grid spacing */
+#dashboard > .row,
+#comparing > .row,
+#raw_data {
+    margin: 1.5rem 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+}
+
+/* KPI Cards styling */
+.dbc-card {
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.dbc-card:hover {
+    transform: translateY(-3px);
+}
+
+.card-title {
+    color: #6c757d !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.card-text {
+    color: #2c3e50 !important;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+}
+
+/* Graph containers */
+.dcc-graph {
+    border-radius: 8px;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Filters and headers */
+#filters {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#head {
+    margin-bottom: 2rem;
+}
+
+/* Table styling */
+.ag-theme-alpine {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #page-content {
+        padding: 1rem;
+    }
+    
+    .dbc-card {
+        margin: 0.5rem 0;
+    }
+    
+    #dashboard > .row {
+        margin: 1rem 0;
+    }
 }
