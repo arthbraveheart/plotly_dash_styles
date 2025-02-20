@@ -64,6 +64,9 @@
 }
 
 /* Table styling */
+.btn {
+    width: clamp(50px, 80px, 90px);
+}
 .ag-theme-alpine {
     border-radius: 8px;
     overflow: hidden;
