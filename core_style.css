@@ -64,7 +64,7 @@
 }
 
 /* Table styling */
-.btn {
+#csv-button {
     width: clamp(50px, 80px, 90px);
 }
 .ag-theme-alpine {
