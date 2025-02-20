@@ -65,7 +65,7 @@
 
 /* Table styling */
 #csv-button {
-    width: clamp(50px, 80px, 90px);
+    width: clamp(80px, 100px, 120px);
 }
 .ag-theme-alpine {
     border-radius: 8px;
